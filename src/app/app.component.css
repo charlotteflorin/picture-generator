@@ -1,0 +1,17 @@
+.main-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ 
+}
+
+.randomimg{
+    width: 10rem;
+    height: 10rem;
+    padding-top: 5rem;
+}
+
+.generatebtn{
+    margin-top: 2rem;
+}

@@ -1,0 +1,35 @@
+
+.navbar{
+    padding-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #28a745 ;
+    color: #ffffff;
+}
+
+.menu{
+    margin: 1rem 4rem;
+}
+
+.menu>ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu>ul>li {
+    padding-left: 1rem
+}
+
+.active-link{
+    color: #f1f0f0;
+}
+
+li:hover {
+    color: #f1f0f0;
+    transition: text-decoration 0.5s ease-in-out; 
+  }
+
+ 
+  
+
