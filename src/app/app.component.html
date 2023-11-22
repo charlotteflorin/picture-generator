@@ -3,8 +3,10 @@
 <div class="main-con">
 <img [src]="imageUrl" alt="" class="randomimg">
 
-<label for="topicSelect">Select a topic:</label>
-<select id="topicSelect" [(ngModel)]="topic">
+<div class="selector">
+
+<label for="topicSelect" class="select-topic-label selectort">Select a topic:</label>
+<select id="topicSelect" [(ngModel)]="topic" class="selectort">
  <option value="">None</option>
   <option value="nature">Nature</option>
   <option value="wallpapers">Wallpapers</option>
@@ -13,5 +15,23 @@
   <option value="architecture-interior">architecture-interior</option>
 </select>
 
+</div>
+
+<div class="btn-container">
 <button class="generatebtn" (click)="OnGetRandomImage()">Generate new random picture</button>
 
+<button class="generatebtn" (click)="handleStatsBtn()"> Show Statistics </button>
+</div>
+
+<div class="snd-container" *ngIf="showStats">
+  
+
+    <h3 class="stathead">Statistics</h3>
+
+  <div class="data-container">
+    <h2>Downloads: {{formatDownloads}}</h2>
+    <h2>Views: {{formatViews}}</h2>
+    <h2>Likes: {{formatLikes}}</h2>
+  </div>
+
+</div>
