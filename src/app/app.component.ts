@@ -36,7 +36,7 @@ export class AppComponent {
     this.showStats=false;
     const url = `https://api.unsplash.com/photos/random`;
     const headers = {
-      Authorization: `Client-ID K6CxcX-6R2iafT7WPlIqufmH5D_CzlKVGa7hYQMXDMw`
+      Authorization: `Client-ID `
     };
 
     const params = new HttpParams().set('query', this.topic);
